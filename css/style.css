@@ -705,17 +705,17 @@ p.name-member {
  em.timeline-item {
   text-indent: 3px;
   width: 100%;
-  margin-bottom: 1px;
+  margin-bottom: 36px;
   display: flex;
   border-bottom: 1px solid rgba(24, 161, 146, 0.56);
   }
  .timeline-desc{
   background: #E4F1FE;
-  height: 290px;
+  height: 300px;
   }
   .timeline-other {
     background: rgb(197, 239, 247);
-    height: 290px;
+    height: 300px;
   }
  .timeline {
   top: 35px;
