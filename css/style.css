@@ -1483,3 +1483,18 @@ p {
   text-align: justify;
 }
 
+
+/* siva edits */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 8px;
+  font-weight: bold;
+  background-color: #e4f1fe;
+}
