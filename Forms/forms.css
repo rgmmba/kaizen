@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html,
+body {
+  overflow-x: hidden;
+}
+.formSection {
+  width: 100vw;
+  background-image: url('https://res.cloudinary.com/sivapullaiah/image/upload/v1708402191/ezgif.com-webp-to-png-converter_nzfqhc.avif');
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.label {
+  color: rgb(51 65 85);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.inputEle {
+  width: 100%;
+  border-color: rgba(229, 231, 235, 1);
+  border-radius: 8px;
+}
+
+.submitForm {
+  width: 100%;
+  z-index: 2;
+}
+
+.form {
+  width: 100%;
+  /* height: 630px auto; */
+  background-color: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  /* overflow: auto; */
+  overflow: hidden;
+}
+
+.w-embed {
+  z-index: -1;
+  flex: none;
+  position: absolute;
+  top: auto;
+  bottom: 17%;
+  left: -9%;
+  right: auto;
+}
+
+.form-row {
+  margin: 0px;
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.labelName {
+  margin: 0px;
+}
+
+.submit-text {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+/* Tooltip container */
+.Tooltip {
+  position: relative;
+}
+
+/* Tooltip text */
+.Tooltip .tooltiptext {
+  visibility: hidden;
+  /* width: 120px; */
+  /* background-color: rgb(148, 163, 184); */
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 70;
+  top: 40px;
+  right: 100%;
+  /* Move tooltip text to the left */
+  margin-right: 10px;
+  /* Adjust margin for spacing */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.Tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.form_heading {
+  font-size: 24px;
+}
+
+.Gradiant-bg {
+  color: transparent;
+  background: linear-gradient(
+    74deg,
+    #4285f4 0,
+    #9b72cb 9%,
+    #d96570 20%,
+    #d96570 24%,
+    #9b72cb 35%,
+    #4285f4 44%,
+    #9b72cb 50%,
+    #d96570 56%,
+    #131314 75%,
+    #131314 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-heading {
+  font-size: 34px;
+}
+.second-heading {
+  font-size: 17px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 6px;
+}
+
+.sticky-icon {
+  background-color: #9393931a;
+  backdrop-filter: blur(20px);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Note: You had two z-index declarations; I removed the duplicate */
+  position: fixed;
+  top: 20px; /* Updated to top */
+  left: 40px; /* Updated to left */
+  cursor: pointer;
+}
+
+#msg-success.error-message {
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #513232 !important;
+  border: 1px solid #ef4444;
+  border-radius: 0.375rem;
+}
+#msg-success.success-message {
+  padding: 0.5rem 0.75rem;
+  color: #28a728 !important;
+  background-color: rgba(40, 167, 69, 0.1);
+  border-radius: 0.375rem;
+  border: 1px solid #28a745;
+}
+
+#registration_successful {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.ripple-logo {
+  border-radius: 50%;
+}
+
+.form-back {
+  text-decoration: none;
+  color: #131314;
+}
+.form-back:hover {
+  text-decoration: none;
+  color: #131314;
+}
+/* Extra Small devices (portrait phones) */
+@media (max-width: 575.98px) {
+  /* CSS styles for extra small devices */
+  .winner-img {
+    height: 100px;
+  }
+  .phonepay_img {
+    height: 80px;
+    width: 80px;
+  }
+  .form_pic {
+    height: 80px;
+    width: 80px;
+  }
+
+  .ripple-logo {
+    height: 60px;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* CSS styles for small devices */
+  .winner-img {
+    height: 120px;
+  }
+  .phonepay_img {
+    height: 85px;
+    width: 85px;
+  }
+  .form_pic {
+    height: 90px;
+    width: 90px;
+  }
+  .ripple-logo {
+    height: 60px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* CSS styles for medium devices */
+  .winner-img {
+    height: 140px;
+  }
+  .phonepay_img {
+    height: 95px;
+    width: 95px;
+  }
+  .form_pic {
+    height: 140px;
+    width: 140px;
+  }
+
+  .ripple-logo {
+    height: 160px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* CSS styles for large devices */
+  .winner-img {
+    height: 160px;
+  }
+  .phonepay_img {
+    height: 120px;
+    width: 120px;
+  }
+  .form_pic {
+    height: 140px;
+    width: 140px;
+  }
+
+  .ripple-logo {
+    height: 100px;
+  }
+}
+
+/* Extra Large devices (large desktops) */
+@media (min-width: 1200px) {
+  /* CSS styles for extra large devices */
+  .winner-img {
+    height: 200px;
+  }
+  .phonepay_img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .form_pic {
+    height: 120px;
+    width: 120px;
+  }
+
+  .ripple-logo {
+    height: 70px;
+  }
+}
+
+.form_pic,
+.form_heading {
+  margin-top: 5px;
+}
+
+.customise_file_icon {
+  border: none !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 1px !important;
+  border-radius: 25px !important;
+}
+
+.customise_file_icon::-webkit-file-upload-button {
+  border-radius: 25px;
+  background: linear-gradient(
+    74deg,
+    #4285f4 0,
+    #9b72cb 9%,
+    #d96570 20%,
+    #d96570 24%,
+    #9b72cb 35%,
+    #4285f4 44%,
+    #9b72cb 50%,
+    #d96570 56%,
+    #131314 75%,
+    #131314 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inputEle[type='radio'] {
+  border-radius: 50%;
+  transform: scale(1.5); /* Increase the size */
+  margin-right: 5px; /* Adjust spacing */
+}
+
+.inputEle[type='radio']:hover {
+  border-radius: 50%;
+  width: 1em; /* Set the width to be equal to the height */
+  height: 1em;
+}
+
+#accommodationNo,
+#accommodationYes {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.inputEle[type='radio'] {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.accommodation_label {
+  font-size: 18px;
+  margin: 0px;
+}
+
+.second_section,
+.first_section {
+  margin-right: 0.5rem;
+  border-radius: 16px;
+  height: 2px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  background-color: rgb(226, 232, 240);
+}
+
+.selected_section {
+  margin-right: 0.5rem;
+  border-radius: 16px;
+  height: 2px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  background-color: rgb(71, 85, 105);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  margin-top: 4px;
+  padding: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #829ab1;
+  border-radius: 14px;
+}
+
+.Instruction {
+  /* list-style-type: num; */
+  position: relative;
+  z-index: 10000;
+  margin-right: 30px;
+  height: 300px;
+  overflow: auto;
+}
+.Instruction::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Adjust this height as needed */
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.7));
+}
+
+.marquee-regi-closed {
+  color: #000;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+  color: #f82249;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
